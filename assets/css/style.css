@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --light-blue: #34B0BE;
+    --light-grey: #D1CECA;
+    --black: #242635;
+    --white: #FFFFFF;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 35px 5px;
+    background-color: var(--black);  
+
+}
+
+img{
+    max-width: 200px;
+    margin-left: 1px;
+}
+
+hr {
+    height: 3.5px;
+    width: 117%;
+    background-color: var(--white);
+  }
+.header{
+    background-color: var(--black);
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.nav{    
+    display: flex;
+    justify-content: end;
+}
+
+.nav-link{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.nav-menu{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--black);
+    min-height: calc( 100vh - 70px );
+    list-style: none;
+    top: 80px;
+    width: 100%;
+    left: 100%;
+    transition: left 0.5s;
+    z-index: 100;
+}
+
+.nav-menu-item{
+    line-height: 80px;
+}
+
+.nav-menu-link:hover
+{
+    color: var(--light-blue);
+    transition: .5s;
+}
+#btn-menu{
+    display: none;
+}
+.nav-toggle{
+    background: none;
+    border: none;
+    font-size: 24px;
+    padding: 0 20px;
+    line-height: 70px;
+    display: none;
+    cursor: pointer;
+}
+#btn-menu:checked ~ .nav-menu{
+    left: 0;   
+}
+.nav-toggle{
+    display: block;
+}
+
+.div-circle{
+    width: 290px;
+    height: 315px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: var(--light-grey);
+    opacity: 0.12;
+}
+
+.header-image-one{
+    position: absolute;
+}
+
+.contenedor-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-information{
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.header-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-text h2{
+    color: var(--white);
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.header-text h1{
+    color: var(--light-blue);
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.line-one{
+    display: none;
+}
+
+.line-two{
+    margin-top: .5rem;
+    max-width: 300px;
+}
+
+.parrafo-one{
+    font-size: 18px;
+    color: var(--white);
+    margin-top: 0.8rem;
+}
+.text-accent{
+    color: var(--light-blue);
+    font-weight: 600;
+}
+
+.parrafo-two{
+    margin-top: 2rem;
+    font-size: 18px;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+.social-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+.contenedor-store{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: var(--light-grey);
+    border-radius: 10px;
+    max-width: 303px;
+    padding: 1rem 12rem;
+    opacity: 0.2;
+    
+}
+
+.div-social{
+    background-color: white;
+    border-radius: 100%;
+    padding: .5rem;
+    
+}
+
+.div-store{
+    background-color: white;
+    border-radius: 10px;
+    padding: .5rem;
+    padding: 0.2rem 1rem;
+    
+}
+
+.div-store>.icon{
+    width: 40px;
+}
+
+.section-about{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.section-about h2{
+    font-size: 32px;
+    color: var(--light-blue);
+    margin-bottom: 2rem;
+}
+
+.section-about p{
+    color: var(--white);
+    font-size: 18px;
+}
+
+.section-services{
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.section-services h2{
+    color: var(--light-blue);
+    font-size: 32px;
+}
+
+
+
+.contenedor-services{
+    display: flex;
+    margin: 1rem auto;
+    width: 80vw;
+    background-color: #34B0BE;
+    padding: 1rem;
+    gap: 1rem;
+    overflow-x: scroll;
+}
+.services{
+    background-color: var(--white);
+    background-image: url("../Vectores/Ellipse\ 14.svg");
+    border-radius: 3%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.container-one{
+    background-color: var(--white);
+    border: 1px solid white;
+    color: black;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+.container-two{
+    background-color: var(--light-blue);
+    border-radius: 10px;
+    position: absolute;
+    width: 95%;
+
+}
+
+.container-two,
+.container-three small{
+    color: var(--light-blue);
+}
+
+.container-habilidades{
+    text-align: center;
+    color: var(--light-blue);
+    font-size: 32px;
+    margin-top: 4rem;
+}
+
+.section-habilities h3{
+    color: var(--white);
+    font-size: 18px;
+}
+
+.container-percent{
+    color: var(--light-blue);
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.container-three{
+    background-color: var(--light-blue);
+    border-radius: 10px;
+    position: absolute;
+    width: 80%;
+}
+
+.contenedor-portafolio-scroll{
+    display: flex;
+    margin: 1rem auto;
+    padding: 1rem;
+    gap: 1rem;
+    overflow-x: scroll;
+}
+.contenedor-portafolio-scroll img{
+    max-width: 297px;
+    margin-left: 1px;
+}
+
+.contenedor-portafolio h2{
+    color: var(--light-blue);
+    font-size: 32px;
+    margin-top: 4rem;
+    text-align: center;
+}
+
+.container-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.contacto{
+    background-color: var(--white);
+    background-image: url("../Vectores/Ellipse\ 14.svg");
+    border-radius: 3%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    max-width: 297px;
+}
+
+footer{
+    text-align: center;
+}
+
+
+@media screen and (min-width: 768px) {
+    body{
+        font-size: 18px;
+    }
+   
+    .nav-menu{
+        position: static;
+        flex-direction: row;
+        min-height: auto;
+        justify-content: end;   
+        margin-right: 20px;
+        /*width:auto;*/
+        
+              
+    }
+    .nav-menu-item{
+        margin: 0 10px;
+        line-height: 90px;
+        width: max-content;
+        
+    }
+    .nav-toggle{
+        display: none;
+    } 
+    
+    
+
+    
+}
