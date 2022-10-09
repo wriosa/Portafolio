@@ -250,6 +250,7 @@ hr {
     background-color: var(--white);
     background-image: url("../Vectores/Ellipse\ 14.svg");
     background-repeat: no-repeat;
+    background-position-x: center;
     border-radius: 3%;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -346,6 +347,7 @@ footer h2{
 .contacto{
     background-color: var(--white);
     background-image: url("../Vectores/Ellipse\ 14.svg");
+    background-position-x: center;
     border-radius: 3%;
     padding-top: 3rem;
     padding-bottom: 3rem;
