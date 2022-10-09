@@ -7,6 +7,7 @@
     --white: #FFFFFF;
 }
 
+
 *{
     margin: 0;
     padding: 0;
@@ -41,6 +42,10 @@ hr {
 .nav{    
     display: flex;
     justify-content: end;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 100;
 }
 
 .nav-link{
@@ -118,6 +123,7 @@ hr {
     flex-direction: column;
     gap: 2rem;
     align-items: center;
+    margin-top: 31px;
 }
 
 .header-text{
@@ -175,12 +181,10 @@ hr {
     display: flex;
     justify-content: center;
     gap: 2rem;
-    background-color: var(--light-grey);
+    background-color: #d1ceca4d;
     border-radius: 10px;
     max-width: 303px;
-    padding: 1rem 12rem;
-    opacity: 0.2;
-    
+    padding: 1rem 12rem;    
 }
 
 .div-social{
@@ -205,6 +209,8 @@ hr {
 .section-about{
     text-align: center;
     margin-top: 4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .section-about h2{
@@ -216,6 +222,7 @@ hr {
 .section-about p{
     color: var(--white);
     font-size: 18px;
+    text-align: justify;
 }
 
 .section-services{
@@ -234,7 +241,7 @@ hr {
     display: flex;
     margin: 1rem auto;
     width: 80vw;
-    background-color: #34B0BE;
+    /*background-color: #34B0BE;*/
     padding: 1rem;
     gap: 1rem;
     overflow-x: scroll;
@@ -242,14 +249,15 @@ hr {
 .services{
     background-color: var(--white);
     background-image: url("../Vectores/Ellipse\ 14.svg");
+    background-repeat: no-repeat;
     border-radius: 3%;
     padding-top: 3rem;
     padding-bottom: 3rem;
+    min-width: 17rem;
 }
 
 .container-one{
     background-color: var(--white);
-    border: 1px solid white;
     color: black;
     border-radius: 10px;
     margin-top: 0.5rem;
@@ -276,6 +284,10 @@ hr {
     margin-top: 4rem;
 }
 
+.section-habilities{
+    padding: 0 1.5rem;
+}
+
 .section-habilities h3{
     color: var(--white);
     font-size: 18px;
@@ -295,10 +307,13 @@ hr {
     width: 80%;
 }
 
+.contenedor-portafolio{
+    padding: 1rem;
+}
+
 .contenedor-portafolio-scroll{
     display: flex;
     margin: 1rem auto;
-    padding: 1rem;
     gap: 1rem;
     overflow-x: scroll;
 }
@@ -318,8 +333,14 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     gap: 2rem;
+}
+
+footer h2{
+    color: var(--light-blue);
+    font-size: 32px;
+    margin-bottom: 1.5rem;
 }
 
 .contacto{
@@ -329,16 +350,40 @@ hr {
     padding-top: 3rem;
     padding-bottom: 3rem;
     max-width: 297px;
+    width: 294px;
 }
 
 footer{
     text-align: center;
 }
 
+.hecho{
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--light-blue);
+    font-size: 18px;
+}
+
 
 @media screen and (min-width: 768px) {
     body{
         font-size: 18px;
+    }
+
+    section.about>p{
+        width: 60%
+        }
+
+    .contenedor-principal{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .header-text{
+        align-items: start;
+        position: absolute;
+        left: 5vw;
+        max-width: 229px;
+        margin-top: 3rem;
     }
    
     .nav-menu{
@@ -347,8 +392,7 @@ footer{
         min-height: auto;
         justify-content: end;   
         margin-right: 20px;
-        /*width:auto;*/
-        
+        /*width:auto;*/       
               
     }
     .nav-menu-item{
@@ -360,8 +404,92 @@ footer{
     .nav-toggle{
         display: none;
     } 
-    
-    
 
-    
+    .social-container {
+        gap: 1rem;
+    }
+
+    .div-store > .icon {
+        width: 65px;
+        margin-top: 0.7rem;
+    }
+    .div-store{
+        width: 149px;
+        text-align: center;
+    }
+    .contenedor-store{
+        height: 128px;
+        width: 88vw;
+        max-width: none;  
+        margin-top: 3rem;
+        gap: 10rem;
+    }
+    img {
+        max-width: 375px;
+    }
+    .div-circle{
+        margin-top: 2rem;
+        width: 605px;
+        height: 551px;
+        margin-bottom: -6.5rem;
+    }
+    .header-text h1 {
+        font-size: 54px;
+    }
+
+    .parrafo-one {
+        font-size: 24px;
+    }
+
+    .parrafo-two {
+        font-size: 22px;
+    }
+
+    /*.contenedor-services {
+        overflow-x: none;
+    }*/
+    .section-habilities {
+        padding: 0 15.5rem;
+    }
+
+    .container-contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 9rem;
+    }
+
+    .line-two{
+        display: none;
+    }
+    .line-one{
+        display: flex;
+        margin-top: 1rem;
+    }
+    .contenedor-services {
+        overflow-x: auto;
+    }
+
+    .contenedor-portafolio-scroll {
+        overflow-x: auto;
+        justify-content: center;
+    }
+
+    .services {
+        background-position-x: center;
+    }
+
+    .section-about p {
+        max-width: 400px;
+        margin: 0 auto;
+    }    
 }
+
+@media screen and (min-width: 922px) {
+    .header-text{
+        left: 14vw;
+    }
+
+}
+
