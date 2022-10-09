@@ -62,11 +62,12 @@ hr {
     background-color: var(--black);
     min-height: calc( 100vh - 70px );
     list-style: none;
-    top: 80px;
     width: 100%;
     left: 100%;
     transition: left 0.5s;
-    z-index: 100;
+    z-index: 95;
+    top: 0px;
+    height: 100%;
 }
 
 .nav-menu-item{
@@ -89,12 +90,14 @@ hr {
     line-height: 70px;
     display: none;
     cursor: pointer;
+    z-index: 100;
 }
 #btn-menu:checked ~ .nav-menu{
     left: 0;   
 }
 .nav-toggle{
     display: block;
+
 }
 
 .div-circle{
